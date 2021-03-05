@@ -1,0 +1,15 @@
+.enter{
+    display:flex;
+    flex-direction:column;
+    width:210px;
+}
+
+.enter input{
+    width:203px;
+    height:40px;
+}
+
+.enter button{
+    width:210px;
+    height:40px;
+}
