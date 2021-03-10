@@ -52,7 +52,6 @@ class People extends React.Component {
     return (
       <div className={PeopleStyle.mainDiv}>
         <h1>Список студентов</h1>
-        <div>Посмотрите сюда: {this.state.studId}</div>
         <h2>{error}</h2>
         <Table
           onRow={(record) => {

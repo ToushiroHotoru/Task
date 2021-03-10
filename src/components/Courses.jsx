@@ -10,7 +10,7 @@ const columns = [
     key: "userId",
   },
   {
-    title: "id-пользователя",
+    title: "Курсовые",
     dataIndex: "id",
     key: "id",
   },
