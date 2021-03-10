@@ -1,8 +1,22 @@
 import React from "react";
 import { Table } from "antd";
-import PeopleStyle from "./People.module.css";
 import "antd/dist/antd.css";
-let url = "https://jsonplaceholder.typicode.com/users";
+const url = "https://jsonplaceholder.typicode.com/users";
+
+// const dataSource = [
+//   {
+//     key: "1",
+//     name: "Mike",
+//     age: 32,
+//     address: "10 Downing Street",
+//   },
+//   {
+//     key: "2",
+//     name: "John",
+//     age: 42,
+//     address: "10 Downing Street",
+//   },
+// ];
 
 const columns = [
   {
@@ -22,11 +36,11 @@ const columns = [
   },
 ];
 
-class People extends React.Component {
+class Students extends React.Component {
   state = {
     users: [],
     error: "",
-    studId: "",
+    studentId: "",
   };
 
   componentDidMount = async () => {
@@ -39,29 +53,31 @@ class People extends React.Component {
         error: "Ошибка получения данных",
       });
     }
-
     this.setState({
       users,
     });
   };
 
+  putId = (id) => {
+    this.setState({studentId: id});
+    console.log(id);
+  };
+
+
 
   render() {
     const { error, users } = this.state;
-
     return (
-      <div className={PeopleStyle.mainDiv}>
+      <div className="students">
         <h1>Список студентов</h1>
-        <div>Посмотрите сюда: {this.state.studId}</div>
         <h2>{error}</h2>
+
         <Table
           onRow={(record) => {
             return {
               onClick: (event) => {
-                let id = record.id;
-                this.setState({ studId: id });
-                this.props.parentFunc({ id });
-              },
+                this.putId(record.id);
+              }, // check click row
             };
           }}
           dataSource={users}
@@ -72,4 +88,4 @@ class People extends React.Component {
   }
 }
 
-export default People;
+export default Students;

@@ -1,0 +1,29 @@
+.childrenDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 20px;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainInput {
+  margin-bottom: 50px;
+  border: 2px solid lightcoral;
+  border-radius: 5px;
+}
+
+.loginButton {
+  width: 150px;
+  height: 20px;
+  background-color: royalblue;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}

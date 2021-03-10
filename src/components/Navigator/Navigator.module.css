@@ -1,6 +1,6 @@
 .navigator{
    display:grid;
-   grid-template-areas: 
+   grid-template-areas:
    "a b b";
    min-height: 100vh;
    width: 100%;
@@ -9,24 +9,27 @@
 button{
     width: 150px;
     height: 70px;
+    background-color: whitesmoke;
+    color: red;
 }
 
 nav{
     display: flex;
     flex-direction: column;
     grid-area: a;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: green;
-    
+    background-color: greenyellow;
+
 }
 
-a{
+nav a{
     text-decoration: none;
     color: black;
     background-color: whitesmoke;
     padding: 20px 50px;
-    border: 5px solid black;
+    margin: 20px;
+    width: 150px;
 }
 
 .dashboard{
@@ -34,6 +37,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: cyan;
 }
 
 
