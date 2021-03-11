@@ -4,9 +4,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Name from "./Files/Name";
 import Group from "./Files/Group";
 import Age from "./Files/Age";
-import People from "../People";
+import People from "./People/People.jsx";
 import { NavLink } from "react-router-dom";
-import Courses from "../Courses";
+import Courses from "./Courses/Courses.jsx";
 
 class Navigator extends React.Component {
   state = {

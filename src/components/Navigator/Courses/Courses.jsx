@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "antd";
-import PeopleStyle from "./People.module.css";
+import s from "./Courses.module.css";
 import "antd/dist/antd.css";
 let url = "https://jsonplaceholder.typicode.com/posts?userId=";
 const columns = [
@@ -46,7 +46,7 @@ class Courses extends React.Component {
   render() {
     const { error, users } = this.state;
     return (
-      <div className={PeopleStyle.mainDiv}>
+      <div className={s.table}>
         <h1>Список курсовых</h1>
         <h2>{error}</h2>
         <Table dataSource={users} columns={columns} />
