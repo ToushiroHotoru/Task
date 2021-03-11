@@ -13,7 +13,7 @@ class LoginForm extends React.Component {
     // const { onButtonClick } = this.props;
 
     return (
-      <div className={s.enter}>
+      <div className={s.login}>
           <input type="text" placeholder="Введите имя"></input>
           <button onClick={this.handleClick}>Войти</button>
       </div>

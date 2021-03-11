@@ -60,12 +60,6 @@ class Navigator extends React.Component {
               <button onClick={this.handleClick}>Выйти</button>
             </div>
           </div>
-
-          {/* {buttonArray.map((button) => (
-          <div>
-            <button>{button.icon}{button.text}</button>
-          </div>
-        ))} */}
         </div>
       </BrowserRouter>
     );
